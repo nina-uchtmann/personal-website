@@ -12,7 +12,6 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json', '.wasm'],
     // Avoid resolving the package.json "browser" field into broken aliases
-    // If you have a specific alias, add it here
     alias: {}
   },
   module: {
