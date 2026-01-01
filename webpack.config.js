@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
   mode: process.env.NODE_ENV || 'production',
-  entry: './src/index.ts',
+  entry: './src/app/page.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
