@@ -1,0 +1,37 @@
+name: CI
+
+# When to run this workflow
+on:
+  push:
+    branches: [ main ]  # Run when you push to main branch
+  pull_request:
+    branches: [ main ]  # Run when someone makes a PR to main
+
+# What to do
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest  # Use Ubuntu server
+    
+    steps:
+      # Step 1: Get your code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      # Step 2: Install Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm ci
+      
+      # Step 4: Run linter (check code quality)
+      - name: Lint code
+        run: npm run lint
+      
+      # Step 5: Build the project
+      - name: Build project
+        run: npm run build
