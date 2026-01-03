@@ -1,11 +1,11 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="flex-col p-45">
       <section className="flex-col gap">
         <h1 className="font-display text-6xl">
-          I'm Nina
+          I&apos;m Nina
         </h1>
         <h2 className="font-display text-3xl mb-13">
           3D Animator & Software Developer
