@@ -3,11 +3,17 @@
 :root {
   --background: #fffbf2;
   --foreground: black;
+  --navy: #262740;
+  --bluegray: #475363;
+  --mustard: #D2A034
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-navy: var(--navy);
+  --color-bluegray: var(--bluegray);
+  --color-mustard: var(--mustard);
   --font-sans: var(--font-plus-jakarta);
   --font-display: var(--font-dot-gothic);
 }
