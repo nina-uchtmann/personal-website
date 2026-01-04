@@ -13,8 +13,8 @@ export interface Project {
       link: "https://vimeo.com/...",
     },
     {
-      title: "Environment Design",
-      description: "Stylized 3D environment with dynamic lighting.",
+      title: "Character Modeling",
+      description: "3D models of humans, animals, and creatures.",
       image: "/images/anim-project-2.jpg",
       link: "https://vimeo.com/...",
     }
@@ -22,14 +22,14 @@ export interface Project {
   
   export const softwareProjects: Project[] = [
     {
-      title: "Task Manager App",
-      description: "Full-stack task management application with real-time updates.",
+      title: "Wearabouts",
+      description: "Mobile app to upload and organize closet items and AI generate outfits based on events.",
       image: "/images/software-project-1.jpg",
       link: "https://github.com/...",
     },
     {
-      title: "Weather Dashboard",
-      description: "Weather forecast app using OpenWeather API.",
+      title: "Sappling",
+      description: "Mobile app to encourage sustainability by growing plants, setting goals, and tracking progress.",
       image: "/images/software-project-2.jpg",
       link: "https://github.com/...",
     }
