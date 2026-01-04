@@ -1,6 +1,7 @@
 'use client';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ProjectCard from '@/components/ProjectCard';
+import ProjectToggle from '@/components/ProjectToggle';
 import { animationProjects, softwareProjects} from '@/data/projects';
 export default function ProjectsPage() {
     const [projectType, setProjectType] = useState<'animation' | 'software'>('animation');
@@ -11,34 +12,10 @@ export default function ProjectsPage() {
                 Projects Page
             </h1>
             {/* Toggle Switch */}
-            <div className="flex justify-center">
-            <div className="inline-flex rounded-full bg-navy p-3 shadow-[10px_10px_10px_0px_rgba(0,0,0,0.25)] m-18">
-                <button
-                onClick={() => setProjectType('animation')}
-                className={`
-                    px-7 py-5 rounded-full text-2xl
-                    ${projectType === 'animation'
-                    ? 'bg-background text-foreground'
-                    : 'text-background'
-                    }
-                `}
-                >
-                3D Animation
-                </button>
-                <button
-                onClick={() => setProjectType('software')}
-                className={`
-                    px-7 py-5 rounded-full text-2xl
-                    ${projectType === 'software'
-                    ? 'bg-background text-foreground'
-                    : 'text-background'
-                    }
-                `}
-                >
-                Software Dev
-                </button>
-            </div>
-            </div>
+            <ProjectToggle 
+            projectType={projectType} 
+            onToggle={setProjectType} 
+            />
             {/* Project Cards */}
             <div className="flex justify-center p-5">
                 <div className="max-w w-full space-y-10">
