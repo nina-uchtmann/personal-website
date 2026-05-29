@@ -17,7 +17,7 @@ interface ProjectToggleProps {
               }
             `}
           >
-            3D Animation
+            3D Art
           </button>
           <button
             onClick={() => onToggle('software')}

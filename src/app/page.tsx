@@ -7,7 +7,6 @@ import { animationProjects, softwareProjects, getRandomProject } from '@/data/pr
 export default function Home() {
   const [projectType, setProjectType] = useState<'animation' | 'software'>('animation');
   
-  // Now we're on the client, safe to use random
   const randomAnimation = getRandomProject(animationProjects);
   const randomSoftware = getRandomProject(softwareProjects);
 
@@ -24,7 +23,7 @@ export default function Home() {
         <p className="text-2xl tracking-wide">
         I study Computer Science with a minor in Entrepreneurship at the University of Washington.
         I want to understand and be a part of technical and creative processes in Software
-        Development, 3D Animation, or Game Development.
+        Development, 3D Animation, and Game Development.
         </p>
       </section>
       {/* Featured Projects */}
