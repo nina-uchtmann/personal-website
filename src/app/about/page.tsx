@@ -9,7 +9,7 @@ const AboutMe = () => {
             </h2>
             <section className="flex-col mb-45">
                 <p className="text">
-                    When I'm not working on my next 3D project, being a part-time game dev, or coding, you can find me spending time with my partner or sister, watching horror movies, playing video games, swimming, painting and drawing, eating yummy vegan food, or sitting in the park watching all the doggies walk by. 
+                    When I&apos;m not working on my next 3D project, being a part-time game dev, or coding, you can find me spending time with my partner or sister, watching horror movies, playing video games, swimming, painting and drawing, eating yummy vegan food, or sitting in the park watching all the doggies walk by. 
                 </p>
             </section>
         </div>
