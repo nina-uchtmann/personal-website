@@ -17,6 +17,12 @@ export interface Project {
       description: "3D models of humans, animals, and creatures.",
       image: "/images/anim-project-2.jpg",
       link: "https://vimeo.com/...",
+    },
+    {
+      title: "Environment Modeling",
+      description: "3D models of environments and props.",
+      image: "/images/anim-project-3.jpg",
+      link: "https://vimeo.com/...",
     }
   ];
   
