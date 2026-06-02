@@ -5,10 +5,10 @@ const FineArt = () => {
     
 
     return (
-            <section className="flex flex-col pr-48 pl-60 pt-20 pb-40">
-                <div className="flex flex-col gap-5 max-w-lg">
+            <section className="flex justify-center pt-20 pb-40">
+                <div className="flex flex-col gap-20 max-w-xl">
                     {artworks.map((art, index) => (
-                        <div key={index} className="flex items-center gap-10 w-full">
+                        <div key={index} className="flex items-center gap-20 w-full">
                             <img
                                 src={art.src}
                                 alt={art.caption}
