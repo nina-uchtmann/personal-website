@@ -7,6 +7,7 @@ export default function Navigation() {
         <ul className="flex gap-30 tracking-wider text-2xl">
           <li><Link href="/">Home</Link></li>
           <li><Link href="/projects">Projects</Link></li>
+          <li><Link href="/fineart">Fine Art</Link></li>
           <li><Link href="/about">About Me</Link></li>
         </ul>
     </nav>
